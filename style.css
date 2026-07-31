@@ -1,0 +1,38 @@
+.loading{
+  width:500px;
+  height:80px;
+  margin:0 auto;
+  position:relative;
+}
+
+.ghost{
+  width:60px;
+  position:absolute;
+  left:0;
+  top:0;
+
+  animation:
+    moveGhost 5s linear infinite,
+    floatGhost 1s ease-in-out infinite;
+}
+
+@keyframes moveGhost{
+  0%{
+    left:0;
+  }
+
+  100%{
+    left:440px;
+  }
+}
+
+@keyframes floatGhost{
+  0%,100%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+}
+
